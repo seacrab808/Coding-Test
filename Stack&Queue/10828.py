@@ -20,13 +20,13 @@ while N > 0:
         print(len(stack))
 
     elif(cmd=="empty"):
-        if(len(stack)==0):
+        if(stack):
             print(1)
         else:
             print(0)
 
     elif(cmd=="top"):
-        if(len(stack)==0):
+        if(stack):
             print(-1)
         else:
             print(stack[-1])
