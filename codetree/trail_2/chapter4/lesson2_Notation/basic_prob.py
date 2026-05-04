@@ -15,7 +15,7 @@ while True:
 
 
 for i in digits[::-1]:
-    print(i, end=)
+    print(i, end="")
 
 
 # 십진수로 변환하기
