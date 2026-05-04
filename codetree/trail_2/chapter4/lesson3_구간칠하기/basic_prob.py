@@ -11,3 +11,18 @@ for first, second in commands:
 
 print(max(arr))
 
+
+# 최대로 겹치는 구간
+n = int(input())
+segments = [tuple(map(int, input().split())) for _ in range(n)]
+
+# Please write your code here.
+
+arr = [0 for _ in range(200)]
+offset = 100
+
+for start, end in segments:
+    for i in range(start + offset, end + offset):
+        arr[i] += 1
+
+print(max(arr))
