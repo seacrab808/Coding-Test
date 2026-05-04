@@ -18,4 +18,14 @@ for i in digits[::-1]:
     print(i, end="")
 
 
-# 십진수로 변환하기
+# 이진수를 십진수로 변환하기
+binary = input()
+
+# Please write your code here.
+
+total = 0
+
+for i in binary:
+    total = total * 2 + int(i)
+
+print(total)
